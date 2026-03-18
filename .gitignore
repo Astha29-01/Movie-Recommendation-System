@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# --- PYTHON BACKEND & VIRTUAL ENVIRONMENT ---
+backend/venv/
+backend/__pycache__/
+*.pyc
+.env
+
+# --- MACHINE LEARNING ASSETS (CRITICAL) ---
+# GitHub has a strict 100MB file limit. Attempting to push your similarity.pkl 
+# matrix will cause the entire upload to be violently rejected by the server.
+*.pkl
+backend/movies.pkl
+backend/similarity.pkl
